@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# App - SpotDeals
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**SpotDeals** is a location-based application that helps users discover nearby deals, discounts, and popular spots on an interactive map. Designed to enhance local engagement, SpotDeals shows real-time offers from nearby restaurants, stores, and attractions, enabling users to make the most of their surroundings.
 
-## Available Scripts
+## Instructions to Run the Application
 
-In the project directory, you can run:
+1. **Clone the repository**:
 
-### `npm start`
+   ```bash
+   git clone https://github.com/yourusername/SpotDeals.git
+   cd SpotDeals
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Install dependencies**:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+3. **Set up API keys**:
+   - Create an `.env` file in the root directory.
+   - Add your Mapbox and Google Maps Places API keys to the `.env` file:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```
+    REACT_APP_MAPBOX_API_KEY=your_mapbox_api_key
+    REACT_APP_GOOGLE_PLACES_API_KEY=your_google_maps_api_key
+    ```
 
-### `npm run build`
+4. **Run the application**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Open your browser and navigate to `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features of SpotDeals
 
-### `npm run eject`
+- **Real-time Location-Based Offers**: Discover ongoing discounts and offers from nearby stores, restaurants, and more.
+- **Interactive Map View**: Easily explore your surroundings with Mapbox, featuring pin clustering and customizable pop-ups.
+- **Filter by Interest**: Choose from categories like dining, shopping, and attractions to tailor your experience.
+- **Customizable Offer Pop-ups**: Get detailed offer information and event descriptions directly on the map.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Dependencies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`react` `mapbox gl js` `google maps places api` `axios`
